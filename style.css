@@ -530,3 +530,21 @@ p{margin:.4rem 0 1rem}.section-pad{padding:clamp(4.5rem,8vw,8rem) clamp(1.25rem,
 .bg-vert-fonce .place-label {
   color: var(--miel);
 }
+
+
+#back-to-top {
+  cursor: pointer;
+  border: 1px solid rgba(247, 242, 231, 0.55);
+  background: transparent;
+  color: #f7f2e7;
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+#back-to-top:hover {
+  background: #f7f2e7;
+  color: #2f4a2b;
+  transform: translateY(-2px);
+}
