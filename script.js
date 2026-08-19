@@ -14,11 +14,25 @@ if (toggle && nav) {
 const backToTopButton = document.getElementById("back-to-top");
 
 if (backToTopButton) {
-  backToTopButton.addEventListener("click", () => {
+
+  window.addEventListener("scroll", function () {
+
+    if (window.scrollY > 500) {
+      backToTopButton.classList.add("visible");
+    } else {
+      backToTopButton.classList.remove("visible");
+    }
+
+  });
+
+  backToTopButton.addEventListener("click", function () {
+
     window.scrollTo({
       top: 0,
       left: 0,
       behavior: "smooth"
     });
+
   });
+
 }
