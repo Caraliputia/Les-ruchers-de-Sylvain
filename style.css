@@ -469,3 +469,64 @@ p{margin:.4rem 0 1rem}.section-pad{padding:clamp(4.5rem,8vw,8rem) clamp(1.25rem,
   }
 
 }
+
+
+/* =========================================================
+   ALTERNANCE DES COULEURS DU SITE
+   ========================================================= */
+
+:root {
+  --beige-clair: #f7f2e7;
+  --beige-soutenu: #eee5d3;
+  --vert-clair: #e4e8d8;
+  --vert-fonce: #2f4a2b;
+
+  --texte-fonce: #302d25;
+  --texte-vert: #43543a;
+  --texte-clair: #f7f2e7;
+  --miel: #d3a23c;
+}
+
+
+/* Beige clair */
+
+.bg-beige-clair {
+  background-color: var(--beige-clair);
+  color: var(--texte-fonce);
+}
+
+
+/* Beige légèrement plus soutenu */
+
+.bg-beige-soutenu {
+  background-color: var(--beige-soutenu);
+  color: var(--texte-fonce);
+}
+
+
+/* Vert clair */
+
+.bg-vert-clair {
+  background-color: var(--vert-clair);
+  color: var(--texte-fonce);
+}
+
+
+/* Vert foncé */
+
+.bg-vert-fonce {
+  background-color: var(--vert-fonce);
+  color: var(--texte-clair);
+}
+
+.bg-vert-fonce h2,
+.bg-vert-fonce h3,
+.bg-vert-fonce h4,
+.bg-vert-fonce p {
+  color: var(--texte-clair);
+}
+
+.bg-vert-fonce .eyebrow,
+.bg-vert-fonce .place-label {
+  color: var(--miel);
+}
